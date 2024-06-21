@@ -30,7 +30,12 @@
     <div class="row">
       <div class="col-md-3">
         <div class="card card-body bg-light">
-          <h6>Countries:</h6>
+          <h6>Customer ID Number:</h6>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <br>
+        <div class="card card-body bg-light">
+          <h6>Country:</h6>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <br>
@@ -52,9 +57,6 @@
     </div>
   </div>
 
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
   <!-- The div that holds our map -->
   <div id="map"></div>
 
@@ -65,8 +67,6 @@
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- Our JavaScript -->
-  <script type="text/javascript" src="Resources/js/logic.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="Resources/js/logic.js"></script>
 </body>
